@@ -99,3 +99,8 @@ loads up and does nothing else:
 
 I'm piling up more experiments in the repository for possible future reference.
 These extensions have their own readmes.
+
+## Official samples
+
+Be aware of the official extension samples repository by Microsoft:
+https://github.com/microsoft/vscode-extension-samples
