@@ -1,6 +1,7 @@
 # VS Code extension playground
 
-This repository contains a barebones local workspace VS Code extension.
+This repository contains a barebones local workspace VS Code extension named
+Test Extension (`TomasHubelbauer.test-extension`).
 
 Local workspace extensions are a VS Code feature where an extension can run off
 its source code directly, without needing to be installed from a VSIX or the
@@ -8,6 +9,8 @@ VS Code extension marketplace.
 
 This feature has been a part of VS Code since the version 1.89:
 https://code.visualstudio.com/updates/v1_89#_local-workspace-extensions
+
+## Installation
 
 Local workspace extension needs to be installed once and VS Code will prompt you
 to install it once it discovers it in the `.vscode/extensions` directory:
@@ -19,6 +22,12 @@ There is no need to add the extension to `.vscode/extensions.json` under the
 
 Once installed, VS Code will not prompt you to install it again and it will
 behave like any other regular VS Code extension.
+
+By default, the extensions have an early-exit right at the entry point so they
+don't all file all the time.
+Remove it when testing out the test extension.
+
+## Development
 
 The local workspace extension gets refreshed whenever VS Code restarts, so any
 code changes will only take effect using the Cmd+Shift+P command palette command
@@ -46,6 +55,8 @@ About Visual Studio Code in the top bar of the window.
 
 ![](images/node-version.png)
 
+## Build step
+
 You may of course also opt to use a build process and enable your extensions to
 be written with ESM transpiled to CJS or in TypeScript transpiled to JavaScript
 for a better development extension traded in for setup simplicity.
@@ -56,6 +67,8 @@ becomes stable.
 There is no way to instruct the Node runtime used by the VS Code extension host
 to use extra CLI features to be able to opt into these experimental featues.
 https://nodejs.org/api/typescript.html#type-stripping
+
+## Debugging
 
 Problems with extension development can be debugged using the Ouput pane in the
 VS Code bottom panel under the Extension Host output channel.
@@ -75,7 +88,14 @@ In case there is no error, the extension will activate and log a success info:
 [info] ExtensionService#_doActivateExtension TomasHubelbauer.test-extension, startup: false, activationEvent: 'onStartupFinished'
 ```
 
+## Test extension
+
 As it stands, this sample extensions displays an information message once it
 loads up and does nothing else:
 
 ![](images/info-message.png)
+
+## Other experiments
+
+I'm piling up more experiments in the repository for possible future reference.
+These extensions have their own readmes.
