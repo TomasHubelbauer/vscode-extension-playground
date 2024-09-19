@@ -1,0 +1,13 @@
+{
+  "name": "markdown-diagnostics",
+  "displayName": "MarkDown Diagnostics",
+  "version": "0.0.0",
+  "publisher": "TomasHubelbauer",
+  "main": "extension.js",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ]
+}
