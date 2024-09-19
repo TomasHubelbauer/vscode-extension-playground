@@ -46,6 +46,17 @@ About Visual Studio Code in the top bar of the window.
 
 ![](images/node-version.png)
 
+You may of course also opt to use a build process and enable your extensions to
+be written with ESM transpiled to CJS or in TypeScript transpiled to JavaScript
+for a better development extension traded in for setup simplicity.
+
+Note that as of Node 22, there is experimental support for type stripping,
+allowing you to write your extensions in TypeScript whenever this feature
+becomes stable.
+There is no way to instruct the Node runtime used by the VS Code extension host
+to use extra CLI features to be able to opt into these experimental featues.
+https://nodejs.org/api/typescript.html#type-stripping
+
 Problems with extension development can be debugged using the Ouput pane in the
 VS Code bottom panel under the Extension Host output channel.
 
