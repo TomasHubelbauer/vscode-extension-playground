@@ -12,7 +12,7 @@ https://code.visualstudio.com/updates/v1_89#_local-workspace-extensions
 Local workspace extension needs to be installed once and VS Code will prompt you
 to install it once it discovers it in the `.vscode/extensions` directory:
 
-![](image.png)
+![](images/install-prompt.png)
 
 There is no need to add the extension to `.vscode/extensions.json` under the
 `recommendations` key.
@@ -39,6 +39,13 @@ https://github.com/microsoft/vscode-loader/issues/36
 
 For now, CJS' `require` and `module.exports` is used instead.
 
+Other than ESM, what other ES features can be used is determined by the Node
+version bundled with VS Code as that is what the extension hose process runs on.
+You can find the Node version your install of VS Code uses by going to Code >
+About Visual Studio Code in the top bar of the window.
+
+![](images/node-version.png)
+
 Problems with extension development can be debugged using the Ouput pane in the
 VS Code bottom panel under the Extension Host output channel.
 
@@ -60,4 +67,4 @@ In case there is no error, the extension will activate and log a success info:
 As it stands, this sample extensions displays an information message once it
 loads up and does nothing else:
 
-![](image2.png)
+![](images/info-message.png)
