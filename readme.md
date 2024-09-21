@@ -33,6 +33,10 @@ The local workspace extension gets refreshed whenever VS Code restarts, so any
 code changes will only take effect using the Cmd+Shift+P command palette command
 *Developer: Reload Window*.
 
+I've filed a feature request for reloading local workspace extensions whenever a
+file belonging to a local workspace extension directory gets saved in VS Code:
+https://github.com/microsoft/vscode/issues/229288
+
 The extensions can make use of all VS Code extension APIs and they can read
 both user and workspace settings (`.vscode/setting.json`).
 
