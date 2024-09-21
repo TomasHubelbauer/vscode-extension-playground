@@ -1,0 +1,21 @@
+{
+  "name": "diffing-on-save",
+  "displayName": "Diffing on save",
+  "version": "0.0.0",
+  "publisher": "TomasHubelbauer",
+  "main": "extension.js",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "dependencies": {
+    "diff": "^7.0.0",
+    "time-ago": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "@types/diff": "^5.2.2"
+  }
+}
